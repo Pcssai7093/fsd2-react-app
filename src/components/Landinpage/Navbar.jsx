@@ -24,7 +24,7 @@ const Navbar1 = () => {
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
       <h1 className='w-full text-3xl font-bold text-[#6c27c5]'>F_code</h1>
       <ul className='hidden md:flex'>
-        <li className='p-4'><Link to="/signin"> Home </Link></li>
+        <li className='p-4'><Link to="/signin"> Signin </Link></li>
         <li className='p-4'><Link to="/"> Company </Link></li>
         <li className='p-4'><Link to="/"> Resources</Link></li>
         <li className='p-4'><Link to="/"> About</Link></li>
