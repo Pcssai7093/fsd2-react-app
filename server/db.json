@@ -1,0 +1,142 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullname": "raju",
+      "email": "123@gmail.com",
+      "password": 1234455
+    },
+    {
+      "fullname": "rishik bhimavarapu",
+      "email": "rishiktarak@gmail.com",
+      "password": "rishik tarak",
+      "confirm_password": "rishik tarak",
+      "id": 2
+    },
+    {
+      "fullname": "rishik",
+      "email": "dfdfdfd@gmail.com",
+      "password": "123456",
+      "confirm_password": "123456",
+      "id": 7
+    },
+    {
+      "fullname": "abraham",
+      "email": "abra@gmail.com",
+      "password": "123456",
+      "confirm_password": "123456",
+      "id": 8
+    },
+    {
+      "fullname": "anand",
+      "email": "123@gmail.com",
+      "password": "chrischris",
+      "confirm_password": "chrischris",
+      "id": 9
+    },
+    {
+      "fullname": "ftftftft",
+      "email": "chandrasekhari.p20@gmail.com",
+      "password": "12345678",
+      "confirm_password": "12345678",
+      "id": 10
+    },
+    {
+      "fullname": "fdfdfdf",
+      "email": "chandrasekhari.p20@gmail.com",
+      "password": "12345678",
+      "confirm_password": "12345678",
+      "id": 11
+    },
+    {
+      "fullname": "fdfdfdf",
+      "email": "chandrasekhari.p20@gmail.com",
+      "password": "12345678",
+      "confirm_password": "12345678",
+      "id": 12
+    },
+    {
+      "fullname": "fdfsfddddd",
+      "email": "chandrasekhari.p20@gmail.com",
+      "password": "1212121212",
+      "confirm_password": "1212121212",
+      "id": 13
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "insta promotion",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, architecto.",
+      "userId": 1,
+      "date": "date in string",
+      "price": 3000,
+      "category": "web"
+    },
+    {
+      "id": 2,
+      "title": "youtube promotion",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, architecto.",
+      "userId": 1,
+      "date": "date in string",
+      "price": 2000
+    },
+    {
+      "id": 3,
+      "title": "twitter promotion",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, architecto.",
+      "userId": 1,
+      "date": "date in string",
+      "price": 3400
+    },
+    {
+      "id": 4,
+      "title": "facebook promotion",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, architecto.",
+      "userId": 1,
+      "date": "date in string",
+      "price": 4500
+    },
+    {
+      "title": "app development",
+      "description": "app development app development app development app development app development",
+      "price": "1222",
+      "category": "programming",
+      "userId": "1",
+      "id": 5
+    }
+  ],
+  "wishlist": [
+    {
+      "userId": "2",
+      "serviceId": 2,
+      "id": 1
+    },
+    {
+      "userId": "7",
+      "serviceId": 4,
+      "id": 2
+    },
+    {
+      "userId": "10",
+      "serviceId": 1,
+      "id": 3
+    },
+    {
+      "userId": "1",
+      "serviceId": 3,
+      "id": 4
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "firstName": "raja",
+      "lastName": "sekhar",
+      "userName": "raja7093",
+      "mobile": "1231231231",
+      "email": "123@gmail.com",
+      "password": "123456"
+    }
+  ]
+}
