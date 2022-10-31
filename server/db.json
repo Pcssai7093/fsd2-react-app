@@ -4,7 +4,7 @@
       "id": 1,
       "fullname": "raju",
       "email": "123@gmail.com",
-      "password": 1234455
+      "password": 12345678
     },
     {
       "fullname": "rishik bhimavarapu",
@@ -104,6 +104,14 @@
       "category": "programming",
       "userId": "1",
       "id": 5
+    },
+    {
+      "title": "react native development",
+      "description": "react native development react native development react native development",
+      "price": "4000",
+      "category": "web development",
+      "userId": "1",
+      "id": 6
     }
   ],
   "wishlist": [
@@ -126,6 +134,11 @@
       "userId": "1",
       "serviceId": 3,
       "id": 4
+    },
+    {
+      "userId": "1",
+      "serviceId": 1,
+      "id": 5
     }
   ],
   "admin": [
