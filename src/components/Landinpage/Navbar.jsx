@@ -24,11 +24,11 @@ const Navbar1 = () => {
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
       <h1 className='w-full text-3xl font-bold text-[#6c27c5]'>F_code</h1>
       <ul className='hidden md:flex'>
-        <li className='p-4'><Link to="/signin"> Signin </Link></li>
-        <li className='p-4'><Link to="/"> Company </Link></li>
-        <li className='p-4'><Link to="/"> Resources</Link></li>
-        <li className='p-4'><Link to="/"> About</Link></li>
-        <li className='p-4'><Link to="/"> Contact </Link></li>
+        <li className='p-4'><Link to="/signin" style={{color:'white'}}> Signin </Link></li>
+        <li className='p-4'><Link to="/" style={{color:'white'}} > Company </Link></li>
+        <li className='p-4'><Link to="/" style={{color:'white'}} > Resources</Link></li>
+        <li className='p-4'><Link to="/" style={{color:'white'}} > About</Link></li>
+        <li className='p-4'><Link to="/" style={{color:'white'}} > Contact </Link></li>
       </ul>
       {/* <div onClick={handleNav} className='block md:hidden'>
           {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
