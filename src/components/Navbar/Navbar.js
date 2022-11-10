@@ -25,48 +25,40 @@ function Navbar() {
         console.log(err);
       });
   }, []);
+
   return (
     <div>
       {userName && (
-        <div
-          className={`${styles.Navbar} ${color ? styles.true : styles.false}`}
-        >
-          <div className={styles.menu}>
+        <div>
+          <div className={styles.topnav} id="myTopnav">
             <Link
               to={`/home/${uid}`}
-              className={` ${
-                path.includes("/home") ? styles.active : styles.inactive
-              } `}
+              className={path.includes("/home") ? styles.active : "inactive"}
             >
               Home
             </Link>
             <Link
               to={`/wishlist/${uid}`}
-              className={` ${
-                path.includes("/wishlist") ? styles.active : styles.inactive
-              } `}
+              className={
+                path.includes("/wishlist") ? styles.active : "inactive"
+              }
             >
               Wishlist
             </Link>
             <Link
-              to={`/profile/${uid}`}
-              className={` ${
-                path.includes("/profile") ? styles.active : styles.inactive
-              } `}
-            >
-              Profile
-            </Link>
-            <Link
               to={`/post/${uid}`}
-              className={` ${
-                path.includes("/post") ? styles.active : styles.inactive
-              } `}
+              className={path.includes("/post") ? styles.active : "inactive"}
             >
               Post
             </Link>
-            <p className={styles.userWelcome}> Welcome :) {userName}</p>
+            <Link
+              to={`/profile/${uid}`}
+              className={path.includes("/profile") ? styles.active : "inactive"}
+            >
+              Profile
+            </Link>
+            <Link href="#about">LogOut</Link>
           </div>
-          <div className="seperator"></div>
         </div>
       )}
     </div>

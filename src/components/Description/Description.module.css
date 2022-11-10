@@ -55,3 +55,60 @@
   padding: 10px;
   display: table-cell;
  }
+
+ .serviceDiv{
+  margin: 20px auto;
+  /* display: grid; */
+  /* grid-template-columns: auto auto auto auto; */
+  width:70%;
+}
+
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  /* width: 300px; */
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.serviceDiv button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  /* background-color: white; */
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+  margin: 20px 10px;
+  border-radius: 5px;
+}
+
+.serviceDiv a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.serviceDiv button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.image{
+  border:5px solid black;
+  margin-top: 20px;
+  width: 70%;
+  padding: 2px;
+  /* border-radius: 50%; */
+}
+
+.serviceDiv i{
+  color:#4CAF50;
+}

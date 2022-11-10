@@ -25,20 +25,20 @@ import { Admin } from "./components/Admin";
 import Forms from "./components/Landinpage/Forms";
 
 function App() {
-  const [color, setColor] = useState(false);
+  const [color, setColor] = useState(true);
   const [elem, setElem] = useState(document.body);
 
-  useEffect(() => {
-    elem.style.backgroundColor = "black";
-  }, []);
-  function handleMode() {
-    setColor(!color);
-    // console.log(color);
-    console.log(elem);
-    if (color == true && elem != undefined)
-      elem.style.backgroundColor = "black";
-    else elem.style.backgroundColor = "white";
-  }
+  // useEffect(() => {
+  //   elem.style.backgroundColor = "white";
+  // }, []);
+  // function handleMode() {
+  //   // setColor(!color);
+  //   // console.log(color);
+  //   console.log(elem);
+  //   if (color == true && elem != undefined)
+  //     elem.style.backgroundColor = "black";
+  //   else elem.style.backgroundColor = "white";
+  // }
 
   return (
     <BrowserRouter>
@@ -81,13 +81,10 @@ function App() {
             <Route exact path="/wishlist/:uid">
               <Navbar />
               <Space />
-              <Space />
-
               <Wishlist />
             </Route>
             <Route exact path="/home/:uid">
               <Navbar />
-              <Space />
               <Search />
               <Space />
               <Space />
@@ -95,20 +92,19 @@ function App() {
             </Route>
             <Route exact path="/service/:uid/:pid">
               <Navbar />
-              <Space />
               <Description />
               <Space />
             </Route>
             <Route path="/:any"></Route>
           </modeContext.Provider>
         </Switch>
-        <button className="mode" onClick={handleMode}>
+        {/* <button className="mode" onClick={handleMode}>
           {color ? (
             <p style={{ fontSize: "20px" }}>🌙</p>
           ) : (
             <p style={{ fontSize: "20px" }}>🌞</p>
           )}
-        </button>
+        </button> */}
       </div>
     </BrowserRouter>
   );

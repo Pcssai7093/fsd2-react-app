@@ -20,53 +20,84 @@ function Services({ data }) {
   }
 
   return (
-    <div
-      className={`${styles.serviceDiv} ${color ? styles.true : styles.false} `}
-    >
+    // <div
+    //   className={`${styles.serviceDiv} ${color ? styles.true : styles.false} `}
+    // >
+    //   {data.map((data) => (
+    //     <div className={styles.service}>
+    //       <div className={styles.imageSection}>
+    //         <img className={styles.image} src={pic1} />
+    //       </div>
+    //       <div className={styles.description}>
+    //         <div className={styles.header}>
+    //           <div className={styles.title}>{data.title}</div>
+    //         </div>
+    //         <div className={styles.separator}></div>
+
+    //         <div className={styles.body}>
+    //           <div className={styles.subbody}>
+    //             <img src={pic1} alt="" srcset="" className={styles.userImage} />
+    //             <div className={styles.userName}>{data.user.userName}</div>
+    //           </div>
+    //         </div>
+
+    //         <div className={styles.separator}></div>
+    //         <div className={styles.price}>Starting from {data.price}\-</div>
+    //         {/* <div className={styles.separator}></div> */}
+    //         <div className={styles.footer}>
+    //           <div>
+    //             <Link to={`/service/${userId}/${data.id}`}> 🔎</Link>
+    //           </div>
+    //           <div>
+    //             <Link
+    //               onClick={() => {
+    //                 handleAddToWishlist(data.id);
+    //               }}
+    //             >
+    //               💜
+    //             </Link>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   ))}
+    // </div>
+
+    <div className={styles.serviceDiv}>
       {data.map((data) => (
-        <Link>
-          <div className={styles.service}>
-            <div className={styles.imageSection}>
-              <img className={styles.image} src={pic1} />
-            </div>
-            <div className={styles.description}>
-              <div className={styles.header}>
-                <div className={styles.title}>{data.title}</div>
-              </div>
-              <div className={styles.separator}></div>
-
-              <div className={styles.body}>
-                <div className={styles.subbody}>
-                  <img
-                    src={pic1}
-                    alt=""
-                    srcset=""
-                    className={styles.userImage}
-                  />
-                  <div className={styles.userName}>{data.user.userName}</div>
-                </div>
-              </div>
-
-              <div className={styles.separator}></div>
-              <div className={styles.price}>Starting from {data.price}\-</div>
-              {/* <div className={styles.separator}></div> */}
-              <div className={styles.footer}>
-                <div>
-                  <Link to={`/service/${userId}/${data.id}`}> 🔎</Link>
-                </div>
-                <div>
-                  <Link
-                    onClick={() => {
-                      handleAddToWishlist(data.id);
-                    }}
-                  >
-                    💜
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Link>
+        <div className={styles.card}>
+          <img src={pic1} alt="John" className={styles.image} />
+          <h3>{data.title}</h3>
+          {/* <p className={styles.title}>CEO & Founder, Example</p> */}
+          <p>₹{data.price}</p>
+          <p>{data.user.fullname}</p>
+          <p>
+            <button
+              onClick={() => {
+                history.push(`/service/${userId}/${data.id}`);
+              }}
+            >
+              <Link
+                to={`/service/${userId}/${data.id}`}
+                style={{
+                  textDecoration: "none",
+                  fontSize: "18px",
+                  color: "white",
+                }}
+              >
+                {" "}
+                <i class="fa fa-search" aria-hidden="true"></i>{" "}
+              </Link>
+            </button>
+            <button
+              onClick={() => {
+                handleAddToWishlist(data.id);
+              }}
+            >
+              <i class="fa fa-heart" aria-hidden="true"></i>
+            </button>
+          </p>
+        </div>
       ))}
     </div>
   );

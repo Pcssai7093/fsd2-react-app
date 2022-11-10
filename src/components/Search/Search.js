@@ -70,7 +70,7 @@ function Search() {
 
   return (
     <div>
-      <div
+      {/* <div
         className={`${styles.searchBarDiv} ${
           color ? styles.true : styles.false
         }`}
@@ -104,6 +104,42 @@ function Search() {
             type="reset"
             value="Clear"
             className={styles.clear}
+            onClick={() => filterChangeHandle("clear")}
+          />
+        </form>
+      </div> */}
+
+      <div className={styles.searchComp}>
+        <form>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Search"
+            onChange={(e) => {
+              setSearchText(e.target.value);
+              filterChangeHandle(e.target.value, filterType);
+            }}
+          />
+          <select
+            id="country"
+            name="country"
+            onChange={(e) => {
+              setFilterType(e.target.value);
+              filterChangeHandle(searchText, e.target.value);
+            }}
+          >
+            <option value="australia" selected hidden>
+              Filter
+            </option>
+            <option value="1">Low to High</option>
+            <option value="2">High to Low</option>
+            <option value="3">Recently uploaded</option>
+          </select>
+          <input
+            type="reset"
+            value="Reset"
+            // disabled
             onClick={() => filterChangeHandle("clear")}
           />
         </form>

@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Cards from './Cards';
 import Newsletter  from  './Newsletter';
 import Hero from './Hero';
-
+import {useEffect} from "react"
 // importing the icons 
 
 
@@ -19,6 +19,13 @@ const Navbar1 = () => {
     setNav(!nav);
   };
 
+  useEffect(()=>{
+    document.body.style.backgroundColor="black";
+
+    return ()=>{document.body.style.backgroundColor="white";}
+    
+  },[])
+  
   return (
        <nav>
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
